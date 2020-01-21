@@ -2,7 +2,7 @@ package com.kthomas.springsecurity.demo.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class SpringDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class AnnotationConfigDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
