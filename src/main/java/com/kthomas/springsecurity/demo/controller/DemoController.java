@@ -10,4 +10,14 @@ public class DemoController {
 	public String getHome() {
 		return "home";
 	}
+	
+	@GetMapping("/manager")
+	public String getManager() {
+		return "manager";
+	}
+	
+	@GetMapping("/admin")
+	public String getAdmin() {
+		return "admin";
+	}
 }
