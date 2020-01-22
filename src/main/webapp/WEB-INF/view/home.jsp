@@ -38,5 +38,7 @@
 		<a href="${pageContext.request.contextPath}/login">Login</a>
 	</security:authorize>
 	
+	<a href="${pageContext.request.contextPath}/register">Register</a>
+	
 </body>
 </html>

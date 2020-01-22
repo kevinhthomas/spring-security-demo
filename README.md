@@ -1,6 +1,5 @@
-<p>Work in progress</p>
 <p>
-A simple project to create an Spring MVC with users and roles. Uses Java Spring and JSP.
+A simple project to create an Spring MVC with users and roles. Uses MySQL for backend and JSP for front end.
 <br/>
-Currently just in memory and leverages some of Springs base login/logout helping
+Default user to connect to localhost is user/pass. All necessary sql for initialization is in the resources folder.
 </p>

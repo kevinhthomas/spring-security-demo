@@ -12,7 +12,10 @@
 	<properties>
 		<springframework.version>5.2.1.RELEASE</springframework.version>
 		<springsecurity.version>5.2.1.RELEASE</springsecurity.version>
-
+		<hibernate.version>5.2.16.Final</hibernate.version>
+		<mysql.connector.version>5.1.46</mysql.connector.version>
+		<c3po.version>0.9.5.2</c3po.version>
+		
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -44,6 +47,13 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
 
 		<!-- to compensate for java 9+ not including jaxb -->
 		<dependency>
@@ -58,6 +68,20 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- MySQL and C3P0 -->
+		<dependency>
+		  <groupId>mysql</groupId>
+		  <artifactId>mysql-connector-java</artifactId>
+		  <version>${mysql.connector.version}</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>com.mchange</groupId>
+		  <artifactId>c3p0</artifactId>
+		  <version>${c3po.version}</version>
+		</dependency>
+		
 		
 		<!--  spring security -->
 		<dependency>
@@ -76,6 +100,34 @@
 		  <groupId>org.springframework.security</groupId>
 		  <artifactId>spring-security-taglibs</artifactId>
 		  <version>${springsecurity.version}</version>
+		</dependency>
+
+		<!--Spring Transactions -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		
+		<!--Spring ORM -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		
+		<!--HibernateCore -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+
+		<!--  hibernate validator -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>6.0.7.Final</version>
 		</dependency>
 
 	</dependencies>
